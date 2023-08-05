@@ -1,0 +1,12 @@
+package Lista00;
+
+public class Quadrado {
+	public static void main(String[] args) {
+
+//Processamento dos valores e Saida dos Valores
+		for(int i=0; i<=10; i++) {
+			int quadrado = i * i;
+			System.out.println("O quadrado de " + i + " é: " + quadrado);
+		}	
+	}
+}

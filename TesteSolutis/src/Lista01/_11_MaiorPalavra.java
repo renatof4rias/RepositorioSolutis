@@ -1,0 +1,33 @@
+package Lista01;
+
+import java.util.Scanner;
+
+public class _11_MaiorPalavra {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Digite a primeira palavra: ");
+		String palavra1 = sc.nextLine();
+
+		System.out.print("Digite a segunda palavra: ");
+		String palavra2 = sc.nextLine();
+
+		// Ordenar as palavras em ordem alfabética
+		String palavraMenor = palavra1.compareTo(palavra2) < 0 ? palavra1 : palavra2;
+		String palavraMaior = palavra1.compareTo(palavra2) > 0 ? palavra1 : palavra2;
+
+		System.out.println("Palavras em ordem alfabética: " + palavraMenor + ", " + palavraMaior);
+
+		// Verificar qual palavra tem o maior número de caracteres
+		if (palavra1.length() > palavra2.length()) {
+			System.out.println("A palavra com o maior número de caracteres é: " + palavra1);
+		} else if (palavra1.length() < palavra2.length()) {
+			System.out.println("A palavra com o maior número de caracteres é: " + palavra2);
+		} else {
+			System.out.println("As duas palavras têm o mesmo número de caracteres.");
+		}
+
+		sc.close();
+	}
+}

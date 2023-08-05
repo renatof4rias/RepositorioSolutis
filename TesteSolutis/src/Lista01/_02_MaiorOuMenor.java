@@ -1,0 +1,30 @@
+package Lista01;
+
+import java.util.Scanner;
+
+public class _02_MaiorOuMenor {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+//Entrada dos Valores
+		System.out.print("Digite o primeiro valor: ");
+		double valor1 = scanner.nextDouble();
+
+		System.out.print("Digite o segundo valor: ");
+		double valor2 = scanner.nextDouble();
+//Variavel de Apoio
+		double maior;
+
+//Bloco de if para testar quem e maior 
+
+		if (valor1 > valor2) {
+			maior = valor1;
+		} else {
+			maior = valor2;
+		}
+//Saida do Resultado Entres os valores
+		System.out.println("O maior valor entre " + valor1 + " e " + valor2 + " é: " + maior);
+		scanner.close();
+	}
+}

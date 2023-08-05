@@ -1,0 +1,24 @@
+package TestesSolutisss;
+
+import java.util.Scanner;
+
+public class ParOuImpar {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Digite um Numero Inteiro: ");
+		int numero = sc.nextInt();
+		
+		if (numero % 2 == 0) {
+			System.out.print("O Numero Inserido e PAR");
+		} else {
+			System.out.print("O Numero Inserido e IMPAR");
+		}
+		
+		
+		
+		sc.close();
+	}
+
+}

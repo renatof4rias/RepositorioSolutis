@@ -1,0 +1,26 @@
+package Lista00;
+
+import java.util.Scanner;
+
+public class Soma_Divisao_DoWhile {
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int totalNumeros = 50;
+        int contador = 0;
+        double soma = 0;
+
+        do {
+            System.out.print("Digite o número " + (contador + 1) + ": ");
+            double numero = scanner.nextDouble();
+            soma += numero;
+            contador++;
+        } while (contador < totalNumeros);
+
+        double media = soma / totalNumeros;
+        System.out.println("A média aritmética dos 50 números é: " + media);
+
+        scanner.close();
+    }
+}
+

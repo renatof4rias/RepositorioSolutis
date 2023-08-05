@@ -1,0 +1,30 @@
+package Lista01;
+
+public class AreaCirculo {
+
+	public static void main(String[] args) {
+		import java.util.Scanner;
+
+		public class CalculadoraAreaCirculo {
+		    public static void main(String[] args) {
+		        Scanner scanner = new Scanner(System.in);
+
+		        System.out.print("Digite o raio do círculo: ");
+		        double raio = scanner.nextDouble();
+
+		        double area = calcularAreaCirculo(raio);
+
+		        System.out.println("A área do círculo é: " + Math.round(area));
+
+		        scanner.close();
+		    }
+
+		    public static double calcularAreaCirculo(double raio) {
+		        return Math.PI * Math.pow(raio, 2);
+		    }
+		}
+
+
+	}
+
+}
