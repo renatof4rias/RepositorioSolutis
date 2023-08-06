@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Lista03._42_Media&apos; to &apos;_43_Media&apos;&#x0D;&#x0A;- Original project: &apos;TesteSolutis&apos;&#x0D;&#x0A;- Original element: &apos;Lista03._42_Media&apos;&#x0D;&#x0A;- Renamed element: &apos;Lista03._43_Media&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_42_Media&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Lista03{_42_Media.java[_42_Media" matchStrategy="1" name="_43_Media" qualified="false" references="true" similarDeclarations="false" stamp="1691345442019" textual="false" version="1.0"/>
+</session>

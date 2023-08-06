@@ -1,0 +1,10 @@
+package Lista03;
+
+public class _06_AreaCirculo {
+
+	public static void main(String[] args) {
+		        double raio = 5.0;
+		        double area = Math.PI * Math.pow(raio, 2);
+		        System.out.println("A área do círculo é: " + area + " metros quadrados");
+		    }
+}

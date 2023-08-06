@@ -1,0 +1,27 @@
+package Lista03;
+
+import java.util.Scanner;
+
+public class _50_Nezimo {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Digite o valor de n para encontrar o n-ésimo termo da sequência de Fibonacci: ");
+		int n = input.nextInt();
+
+		int numeroAnterior = 1;
+		int numeroAtual = 1;
+		int proximoNumero = 0;
+
+		for (int i = 3; i <= n; i++) {
+			proximoNumero = numeroAnterior + numeroAtual;
+			numeroAnterior = numeroAtual;
+			numeroAtual = proximoNumero;
+		}
+
+		System.out.println("O " + n + "-ésimo termo da sequência de Fibonacci é: " + proximoNumero);
+
+		input.close();
+	}
+
+}

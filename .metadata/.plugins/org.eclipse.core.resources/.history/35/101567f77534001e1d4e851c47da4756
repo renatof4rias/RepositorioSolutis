@@ -1,0 +1,24 @@
+package Lista03;
+
+import java.util.Scanner;
+
+public class _05_ValorDivida {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Digite o valor inicial da dívida: ");
+		double valorInicial = input.nextDouble();
+
+		System.out.print("Digite a quantidade de meses: ");
+		int quantidadeMeses = input.nextInt();
+
+		System.out.print("Digite o valor dos juros mensais (em decimal): ");
+		double jurosMensais = input.nextDouble();
+
+		double valorFinal = valorInicial * (1 + jurosMensais * quantidadeMeses);
+		System.out.println("O valor final da dívida é: " + valorFinal);
+
+		input.close();
+	}
+}

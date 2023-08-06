@@ -1,0 +1,22 @@
+package Lista03;
+
+import java.util.Scanner;
+
+public class _02_Salarios {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Digite o valor do salário do funcionário: ");
+		double salarioFuncionario = input.nextDouble();
+
+		System.out.print("Digite o valor do salário mínimo atual: ");
+		double salarioMinimoAtual = input.nextDouble();
+
+		double quantidadeSalariosMinimos = salarioFuncionario / salarioMinimoAtual;
+		System.out.println("O funcionário ganha " + quantidadeSalariosMinimos + " salários mínimos");
+
+		input.close();
+	}
+}

@@ -1,0 +1,17 @@
+package Lista03;
+
+public class _34_NumerosSorteados {
+	import java.util.Random;
+
+	public class SortearNumeros {
+	    public static void main(String[] args) {
+	        Random random = new Random();
+
+	        for (int i = 0; i < 50; i++) {
+	            int numeroSorteado = random.nextInt(100) + 1;
+	            System.out.print(numeroSorteado + " ");
+	        }
+	    }
+	}
+
+}

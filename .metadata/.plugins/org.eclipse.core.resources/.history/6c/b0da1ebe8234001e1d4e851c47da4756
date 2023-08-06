@@ -1,0 +1,29 @@
+package Lista03;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class _35_NumerosSorteadosPT2 {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        Random random = new Random();
+
+	        System.out.print("Digite a quantidade de números a serem sorteados: ");
+	        int quantidadeSorteio = sc.nextInt();
+
+	        System.out.print("Digite o valor mínimo do sorteio: ");
+	        int valorMinimo = sc.nextInt();
+
+	        System.out.print("Digite o valor máximo do sorteio: ");
+	        int valorMaximo = sc.nextInt();
+
+	        for (int i = 0; i < quantidadeSorteio; i++) {
+	            int numeroSorteado = random.nextInt(valorMaximo - valorMinimo + 1) + valorMinimo;
+	            System.out.print(numeroSorteado + " ");
+	        }
+
+	        sc.close();
+	    }
+	}
+
+}

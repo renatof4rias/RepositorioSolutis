@@ -1,0 +1,19 @@
+package Lista03;
+
+public class _49_Fibonacci {
+	public static void main(String[] args) {
+		int numeroAnterior = 1;
+		int numeroAtual = 1;
+		int proximoNumero;
+
+		System.out.println("50 primeiros números da sequência de Fibonacci:");
+		System.out.print(numeroAnterior + " " + numeroAtual + " ");
+
+		for (int i = 3; i <= 50; i++) {
+			proximoNumero = numeroAnterior + numeroAtual;
+			System.out.print(proximoNumero + " ");
+			numeroAnterior = numeroAtual;
+			numeroAtual = proximoNumero;
+		}
+	}
+}
