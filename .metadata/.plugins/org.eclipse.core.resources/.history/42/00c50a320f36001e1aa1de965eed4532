@@ -1,0 +1,13 @@
+package Heranca;
+
+public class Fornecedor extends Pessoa{
+
+	private Double valorCredito;
+	private Double valorDivida;
+	
+
+	public Double obterSaldo() {
+		return valorCredito - valorDivida;
+	}
+	
+}

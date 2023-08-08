@@ -1,0 +1,24 @@
+package Heranca;
+
+public class Operario extends Empregado{
+
+	private Double valorProducao;
+	private Double comissao;
+	
+	public Operario() {
+		super();
+		this.valorProducao = 0.0;
+		this.comissao = 0.0;
+		
+	}
+	
+	public Operario(String nome, String endereco, String telefone, int codigoSetor, Double salarioBase, Double imposto,
+			Double valorProducao, Double comissao) {
+		super(nome, endereco, telefone, codigoSetor, salarioBase, imposto);
+		this.valorProducao = valorProducao;
+		this.comissao = comissao;
+	}
+	
+	
+	
+}

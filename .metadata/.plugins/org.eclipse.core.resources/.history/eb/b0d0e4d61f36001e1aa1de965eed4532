@@ -1,0 +1,41 @@
+package Heranca;
+
+public class Vendedor extends Empregado{
+	    private double valorVendas;
+	    private double comissao;
+
+
+	    public Vendedor(String nome, String endereco, String telefone, int codigoSetor, double salarioBase, double imposto, double valorVendas, double comissao) {
+	        super(nome, endereco, telefone, codigoSetor, salarioBase, imposto); // Chama o construtor da classe Empregado com os parâmetros correspondentes
+	        this.valorVendas = valorVendas;
+	        this.comissao = comissao;
+	    }
+
+	    // Getter para o atributo valorVendas
+	    public double getValorVendas() {
+	        return valorVendas;
+	    }
+
+	    // Setter para o atributo valorVendas
+	    public void setValorVendas(double valorVendas) {
+	        this.valorVendas = valorVendas;
+	    }
+
+	    // Getter para o atributo comissao
+	    public double getComissao() {
+	        return comissao;
+	    }
+
+	    // Setter para o atributo comissao
+	    public void setComissao(double comissao) {
+	        this.comissao = comissao;
+	    }
+
+	    // Redefinição do método calcularSalario() para incluir a comissão
+	    @Override
+	    public double calcularSalario() {
+	        double salarioLiquido = getSalarioBase() - (getSalarioBase() * getImposto() / 100) + (valorVendas * comissao / 100);
+	        return salarioLiquido;
+	    }
+	}
+
