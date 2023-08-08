@@ -1,0 +1,38 @@
+package Lista04;
+
+public class Cachorro extends AnimalTerrestreAB {
+
+	private int quantidadePercorrida;
+	private int quantidadeComida;
+	private int quantidadeDormir;
+
+	public Cachorro(String nome, String tipoAnimal, int idade, String habitat, int quantidadePatas, double altura,
+			double peso) {
+		super(nome, tipoAnimal, idade, habitat, quantidadePatas, altura, peso);
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public void comer() {
+		quantidadeComida += 2;
+		System.out.println("O cachorro está comendo. Quantidade de comida ingerida: " + quantidadeComida);
+	}
+
+	@Override
+	public void moverse() {
+		quantidadePercorrida += 2;
+		System.out.println("O cachorro está se movendo. Quantidade de distancia percorrida: " + quantidadePercorrida + " Metros");
+	}
+
+	@Override
+	public void dormir() {
+		quantidadeDormir += 5;
+		System.out.println("O cachorro está dormindo. Quantidade de Horas dormida: " + quantidadeDormir);
+
+	}
+
+	@Override
+	public void emitirSom() {
+		System.out.println("AU AU AU AU AU!!!");
+		
+	}
+}

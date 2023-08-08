@@ -1,0 +1,25 @@
+package Lista04;
+
+public class Leao extends AnimalAB {
+	private int quantidadePercorrida;
+	private int quantidadeDormir;
+	private int quantidadeComida;;
+
+    @Override
+    public void comer() {
+        System.out.println("O leão está comendo.");
+    }
+
+    @Override
+    public void moverse() {
+    	quantidadePercorrida += 5;
+        System.out.println("O leão está se movendo. Distância percorrida: " + quantidadePercorrida);
+    }
+
+    @Override
+    public void dormir() {
+        quantidadeDormir += 8;
+        System.out.println("O leão está dormindo. Quantidade de horas dormidas: " + quantidadeDormir);
+    }
+}
+

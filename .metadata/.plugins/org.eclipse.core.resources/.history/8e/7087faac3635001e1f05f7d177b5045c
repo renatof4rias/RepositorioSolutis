@@ -1,0 +1,24 @@
+package Lista04;
+
+public class Gato extends AnimalAB{
+	private int quantidadeComida;
+	private int distanciaPercorrida;
+	private int horasDormidas;
+	@Override
+	public void comer() {
+		quantidadeComida += 1;
+		System.out.println("Gato comeu 1 unidades de comida.");
+		
+	}
+	@Override
+	public void moverse() {
+		distanciaPercorrida += 3;
+		System.out.println("Gato percorreu 3 metros.");
+		
+	}
+	@Override
+	public void dormir() {
+		horasDormidas += 10;
+        System.out.println("Gato dormiu por 10 horas.");
+	}
+}

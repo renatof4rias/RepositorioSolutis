@@ -1,0 +1,46 @@
+package Lista04;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Criando objetos das classes concretas
+        Cachorro cachorro = new Cachorro();
+        Gato gato = new Gato();
+        Elefante elefante = new Elefante();
+        Leao leao = new Leao();
+        Peixe peixe = new Peixe();
+        Pombo pombo = new Pombo();
+
+        // Demonstrando as ações dos animais
+        System.out.println("Ações do Cachorro:");
+        cachorro.comer();
+        cachorro.moverse();
+        cachorro.dormir();
+        cachorro.emitirSom();
+        System.out.println("\nAções do Gato:");
+        gato.comer();
+        gato.moverse();
+        gato.dormir();
+        gato.emitirSom();
+        System.out.println("\nAções do Elefante:");
+        elefante.comer();
+        elefante.moverse();
+        elefante.dormir();
+        elefante.emitirSom();
+        System.out.println("\nAções do Leão:");
+        leao.comer();
+        leao.moverse();
+        leao.dormir();
+        leao.emitirSom();
+        System.out.println("\nAções do Peixe:");
+        peixe.comer();
+        peixe.moverse();
+        peixe.dormir();
+        peixe.emitirSom();
+        System.out.println("\nAções do Pombo:");
+        pombo.comer();
+        pombo.moverse();
+        pombo.dormir();
+        pombo.emitirSom();
+	}
+}

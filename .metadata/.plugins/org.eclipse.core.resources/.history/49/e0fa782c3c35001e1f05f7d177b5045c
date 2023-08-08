@@ -1,0 +1,9 @@
+package Lista04;
+
+public abstract class AnimalVoadorAB extends AnimalAB {
+    private int quantidadeComidaVoo;
+
+    public void voar() {
+        System.out.println("O animal voador está voando.");
+    }
+}

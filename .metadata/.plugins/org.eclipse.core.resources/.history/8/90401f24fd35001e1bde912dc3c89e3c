@@ -1,0 +1,53 @@
+package Lista04;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+		Cachorro cachorro = new Cachorro("Rex", "Mamífero", 5, "Terra", 4, 0.6, 25.5);
+        Gato gato = new Gato("Felix", "Mamífero", 3, "Terra", 4, 0.35, 4.8);
+        Elefante elefante = new Elefante("Dumbo", "Mamífero", 10, "Terra", 4, 3.2, 3500.0);
+        Leao leao = new Leao("Simba", "Mamífero", 7, "Terra", 4, 1.0, 150.0);
+        Peixe peixe = new Peixe("Nemo", "Peixe", 2, "Água", 2, 0.15, 0.1, 1);
+        Pombo pombo = new Pombo("Pombinho", "Ave", 1, "Terra", 2, 2, 15.0, 0.2, 0.3);
+
+        System.out.println("Ações do Cachorro:");
+        cachorro.getNome();
+        cachorro.comer();
+        cachorro.moverse();
+        cachorro.dormir();
+        cachorro.emitirSom();
+
+        System.out.println("\nAções do Gato:");
+        gato.comer();
+        gato.moverse();
+        gato.dormir();
+        gato.emitirSom();
+
+        System.out.println("\nAções do Elefante:");
+        elefante.comer();
+        elefante.moverse();
+        elefante.dormir();
+        elefante.emitirSom();
+
+        System.out.println("\nAções do Leão:");
+        leao.comer();
+        leao.moverse();
+        leao.dormir();
+        leao.emitirSom();
+
+        System.out.println("\nAções do Peixe:");
+        peixe.comer();
+        peixe.moverse();
+        peixe.dormir();
+        peixe.emitirSom();
+
+        System.out.println("\nAções do Pombo:");
+        pombo.comer();
+        pombo.moverse();
+        pombo.dormir();
+        pombo.emitirSom();
+		
+	
+	}
+}

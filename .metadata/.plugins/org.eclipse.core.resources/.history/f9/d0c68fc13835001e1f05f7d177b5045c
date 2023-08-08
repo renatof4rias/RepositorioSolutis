@@ -1,0 +1,22 @@
+package Lista04;
+
+public class Cachorro extends AnimalAB{
+	    private int quantidadeComida;
+
+	    @Override
+	    public void comer() {
+	        quantidadeComida += 2;
+	        System.out.println("O cachorro está comendo. Quantidade de comida ingerida: " + quantidadeComida);
+	    }
+
+	    @Override
+	    public void moverse() {
+	        System.out.println("O cachorro está se movendo.");
+	    }
+
+		@Override
+		public void dormir() {
+			 System.out.println("O cachorro está dormindo.");
+			
+		}
+}

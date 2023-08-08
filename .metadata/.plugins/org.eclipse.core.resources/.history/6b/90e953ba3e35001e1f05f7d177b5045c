@@ -1,0 +1,8 @@
+package Lista04;
+
+public abstract class AnimalVoadorAB extends AnimalAB {
+
+	public void voar() {
+		System.out.println("Voando.");
+	}
+}

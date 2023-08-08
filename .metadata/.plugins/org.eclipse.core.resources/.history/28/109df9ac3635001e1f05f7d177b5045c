@@ -1,0 +1,117 @@
+
+
+// 2. Classe abstrata AnimalAB que implementa a interface AnimalIF e define os métodos abstratos
+public abstract class AnimalAB implements AnimalIF {
+    // Atributos comuns a todos os animais
+    private String nome;
+    private String tipoAnimal;
+    private int idade;
+    private String habitat;
+    
+    // Construtor da classe AnimalAB
+    public AnimalAB(String nome, String tipoAnimal, int idade, String habitat) {
+        this.nome = nome;
+        this.tipoAnimal = tipoAnimal;
+        this.idade = idade;
+        this.habitat = habitat;
+    }
+    
+    // Implementação dos métodos comer, moverse e dormir (herdados da interface AnimalIF)
+    public void comer() {
+        System.out.println(nome + " está comendo.");
+    }
+    
+    public void moverse() {
+        System.out.println(nome + " está se movendo.");
+    }
+    
+    public void dormir() {
+        System.out.println(nome + " está dormindo.");
+    }
+}
+
+// 3. Classes Cachorro, Gato, Elefante e Leão que herdam da classe AnimalAB e sobrescrevem os métodos abstratos
+public class Cachorro extends AnimalAB {
+    private int quantidadePatas;
+    
+    public Cachorro(String nome, int idade, String habitat, int quantidadePatas) {
+        super(nome, "Cachorro", idade, habitat);
+        this.quantidadePatas = quantidadePatas;
+    }
+    
+    // Sobrescrevendo o método moverse para representar a forma específica de um cachorro se mover
+    @Override
+    public void moverse() {
+        System.out.println(getNome() + " está correndo com " + quantidadePatas + " patas.");
+    }
+}
+
+public class Gato extends AnimalAB {
+    private int quantidadePatas;
+    
+    public Gato(String nome, int idade, String habitat, int quantidadePatas) {
+        super(nome, "Gato", idade, habitat);
+        this.quantidadePatas = quantidadePatas;
+    }
+    
+    // Sobrescrevendo o método moverse para representar a forma específica de um gato se mover
+    @Override
+    public void moverse() {
+        System.out.println(getNome() + " está andando com " + quantidadePatas + " patas.");
+    }
+}
+
+public class Elefante extends AnimalAB {
+    public Elefante(String nome, int idade, String habitat) {
+        super(nome, "Elefante", idade, habitat);
+    }
+}
+
+public class Leao extends AnimalAB {
+    public Leao(String nome, int idade, String habitat) {
+        super(nome, "Leão", idade, habitat);
+    }
+}
+
+// 4. Classes abstratas AnimalMarinhoAB, AnimalVoadorAB e AnimalTerrestreAB que implementam a classe abstrata AnimalAB
+public abstract class AnimalMarinhoAB extends AnimalAB {
+    private String tipoAgua;
+    
+    public AnimalMarinhoAB(String nome, String tipoAnimal, int idade, String habitat, String tipoAgua) {
+        super(nome, tipoAnimal, idade, habitat);
+        this.tipoAgua = tipoAgua;
+    }
+}
+
+public abstract class AnimalVoadorAB extends AnimalAB {
+    private int quantidadeAssas;
+    private double envergaduraAsa;
+    
+    public AnimalVoadorAB(String nome, String tipoAnimal, int idade, String habitat, int quantidadeAssas, double envergaduraAsa) {
+        super(nome, tipoAnimal, idade, habitat);
+        this.quantidadeAssas = quantidadeAssas;
+        this.envergaduraAsa = envergaduraAsa;
+    }
+}
+
+public abstract class AnimalTerrestreAB extends AnimalAB {
+    private int quantidadePatas;
+    
+    public AnimalTerrestreAB(String nome, String tipoAnimal, int idade, String habitat, int quantidadePatas) {
+        super(nome, tipoAnimal, idade, habitat);
+        this.quantidadePatas = quantidadePatas;
+    }
+}
+
+// 5. Classe Peixe que herda de AnimalMarinhoAB e classe Pombo que herda de AnimalVoadorAB
+public class Peixe extends AnimalMarinhoAB {
+    public Peixe(String nome, int idade, String habitat, String tipoAgua) {
+        super(nome, "Peixe", idade, habitat, tipoAgua);
+    }
+}
+
+public class Pombo extends AnimalVoadorAB {
+    public Pombo(String nome, int idade, String habitat, int quantidadeAssas, double envergaduraAsa) {
+        super(nome, "Pombo", idade, habitat, quantidadeAssas, envergaduraAsa);
+    }
+}

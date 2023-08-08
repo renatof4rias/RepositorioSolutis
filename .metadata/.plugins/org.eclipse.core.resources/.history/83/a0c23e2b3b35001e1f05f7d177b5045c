@@ -1,0 +1,23 @@
+package Lista04;
+
+public class Elefante extends AnimalAB {
+	private int quantidadePercorrida;
+	private int quantidadeDormir;
+	private int quantidadeComida;
+
+	@Override
+	public void comer() {
+		System.out.println("O elefante está comendo.");
+	}
+
+	@Override
+	public void moverse() {
+		quantidadePercorrida += 5;
+		System.out.println("O elefante está se movendo. Distância percorrida: " + quantidadePercorrida);
+	}
+
+	@Override
+	public void dormir() {
+		System.out.println("O elefante está dormindo.");
+	}
+}

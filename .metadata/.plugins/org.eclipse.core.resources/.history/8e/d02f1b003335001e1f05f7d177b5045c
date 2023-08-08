@@ -1,0 +1,26 @@
+package Lista04;
+
+public class Cachorro extends AnimalAB {
+
+	 private int quantidadeComida;
+	    private int distanciaPercorrida;
+	    private int horasDormidas;
+
+	@Override
+	public void comer() {
+		this.quantidadeComida += 2;
+		System.out.println("Cachorro comeu 2 unidades de comida.");
+	}
+
+	@Override
+	public void moverse() {
+		distanciaPercorrida += 5;
+		System.out.println("Cachorro percorreu 5 metros.");
+	}
+
+	@Override
+	public void dormir() {
+		horasDormidas += 8;
+		System.out.println("Cachorro dormiu por 8 horas.");
+	}
+}

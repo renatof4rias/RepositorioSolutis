@@ -1,0 +1,23 @@
+package Lista04;
+
+public class Gato extends AnimalAB {
+	private int quantidadePercorrida;
+	private int quantidadeDormir;
+	private int quantidadeComida;
+
+    @Override
+    public void comer() {
+        quantidadeComida += 1;
+        System.out.println("O gato está comendo. Quantidade de comida ingerida: " + quantidadeComida);
+    }
+
+    @Override
+    public void moverse() {
+        System.out.println("O gato está se movendo.");
+    }
+
+    @Override
+    public void dormir() {
+        System.out.println("O gato está dormindo.");
+    }
+}

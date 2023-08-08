@@ -1,0 +1,6 @@
+package Lista04;
+
+public abstract class AnimalAB implements AnimalIF{
+
+	
+}

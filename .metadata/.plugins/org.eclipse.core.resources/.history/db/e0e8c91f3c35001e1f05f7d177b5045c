@@ -1,0 +1,9 @@
+package Lista04;
+
+public abstract class AnimalMarinhoAB extends AnimalAB {
+    private int quantidadeAguaIngerida;
+
+    public void nadar() {
+        System.out.println("O animal marinho está nadando.");
+    }
+}

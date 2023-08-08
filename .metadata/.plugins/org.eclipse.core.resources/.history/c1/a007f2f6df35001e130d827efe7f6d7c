@@ -1,0 +1,11 @@
+package ContaCorrente;
+
+public class ContaCorrente {
+	private String numero;
+	private String tipo;
+	private Cliente primeiroTitular;
+	private Cliente segundoTitular;
+	private double saldo;
+	private double limiteTotal;
+
+}

@@ -1,0 +1,33 @@
+package Lista04;
+
+public class Peixe extends AnimalMarinhoAB {
+	private int quantidadeComida;
+
+	public Peixe(String nome, String tipoAnimal, int idade, String habitat, int quantidadeNadadeiras, double altura,
+			double peso, int quantidadeComida) {
+		super(nome, tipoAnimal, idade, habitat, quantidadeNadadeiras, altura, peso);
+		this.quantidadeComida = quantidadeComida;
+	}
+
+	@Override
+	public void comer() {
+		quantidadeComida += 1;
+		System.out.println("O peixe está comendo. Quantidade de comida ingerida: " + quantidadeComida);
+	}
+
+	@Override
+	public void moverse() {
+		nadar();
+	}
+
+	@Override
+	public void dormir() {
+		System.out.println("O peixe está dormindo.");
+	}
+
+	@Override
+	public void emitirSom() {
+		System.out.println("            !!");
+	}
+
+}

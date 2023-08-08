@@ -1,0 +1,28 @@
+package Lista04;
+
+public class AnimalTerrestreAB extends AnimalAB {
+    private int quantidadeCaminhoPercorrido;
+
+    // Métodos específicos para animais terrestres
+    public void andar() {
+        System.out.println("O animal terrestre está andando.");
+
+}
+
+	@Override
+	public void comer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void moverse() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void dormir() {
+		// TODO Auto-generated method stub
+		
+	}

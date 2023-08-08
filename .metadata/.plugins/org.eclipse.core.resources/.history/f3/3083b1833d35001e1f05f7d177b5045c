@@ -1,0 +1,27 @@
+package Lista04;
+
+public class Pombo extends AnimalVoadorAB {
+	private int quantidadeComida;
+
+	@Override
+	public void comer() {
+		quantidadeComida += 1;
+		System.out.println("O pombo está comendo. Quantidade de comida ingerida: " + quantidadeComida);
+	}
+
+	@Override
+	public void moverse() {
+		voar();
+	}
+
+	@Override
+	public void dormir() {
+		System.out.println("O pombo está dormindo.");
+	}
+
+	@Override
+	public void emitirSom() {
+		// TODO Auto-generated method stub
+		
+	}
+}

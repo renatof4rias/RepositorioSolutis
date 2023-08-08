@@ -1,0 +1,37 @@
+package Lista04;
+
+public class Gato extends AnimalTerrestreAB {
+
+	private int quantidadePercorrida;
+	private int quantidadeDormir;
+	private int quantidadeComida;
+
+	public Gato(String nome, String tipoAnimal, int idade, String habitat, int quantidadePatas, double altura,
+			double peso) {
+		super(nome, tipoAnimal, idade, habitat, quantidadePatas, altura, peso);
+	}
+
+	@Override
+	public void comer() {
+		quantidadeComida += 1;
+		System.out.println("O gato está comendo. Quantidade de comida ingerida: " + quantidadeComida);
+	}
+
+	@Override
+	public void moverse() {
+		quantidadePercorrida += 1;
+		System.out.println(
+				"O gato está se movendo. Quantidade de distancia percorrida: " + quantidadePercorrida + " Metros");
+	}
+
+	@Override
+	public void dormir() {
+		quantidadeDormir += 5;
+		System.out.println("O gato está dormindo. Quantidade de Horas dormida: " + quantidadeDormir);
+	}
+
+	@Override
+	public void emitirSom() {
+		System.out.println("MIAU MIAU!!!");
+	}
+}

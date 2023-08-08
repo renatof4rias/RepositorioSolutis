@@ -1,0 +1,26 @@
+package Lista04;
+
+public class Cachorro extends AnimalAB {
+    private int quantidadePatas;
+    
+    public Cachorro(String nome, int idade, String habitat, int quantidadePatas) {
+        super(nome, "Cachorro", idade, habitat);
+        this.quantidadePatas = quantidadePatas;
+    }
+    
+    // Sobrescrevendo o método moverse para representar a forma específica de um cachorro se mover
+    @Override
+    public void moverse() {
+        System.out.println(getNome() + " está correndo com " + quantidadePatas + " patas.");
+    }
+}
+
+
+
+
+ 
+ 
+ 
+
+
+

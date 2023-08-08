@@ -1,0 +1,23 @@
+package Lista04;
+
+public class Peixe extends AnimalMarinhoAB{
+
+	@Override
+	public void comer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void moverse() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void dormir() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

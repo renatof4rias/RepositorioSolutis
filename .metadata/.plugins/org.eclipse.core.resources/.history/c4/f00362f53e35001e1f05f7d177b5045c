@@ -1,0 +1,36 @@
+package Lista04;
+
+public class Leao extends AnimalTerrestreAB {
+	private int quantidadePercorrida;
+	private int quantidadeDormir;
+	private int quantidadeComida;;
+
+	
+	public Leao(String nome, String tipoAnimal, int idade, String habitat, int quantidadePatas, double altura, double peso) {
+		super(nome, tipoAnimal, idade, habitat, quantidadePatas, altura, peso);
+		
+	}
+    @Override
+    public void comer() {
+    	quantidadeComida += 1;
+		System.out.println("O Leao está comendo. Quantidade de comida ingerida:" + quantidadeComida);
+    }
+
+    @Override
+    public void moverse() {
+    	quantidadePercorrida += 5;
+        System.out.println("O Leao está se movendo. Distância percorrida: " + quantidadePercorrida + " Metros");
+    }
+
+    @Override
+    public void dormir() {
+        quantidadeDormir += 8;
+        System.out.println("O Leao está dormindo. Quantidade de horas dormidas: " + quantidadeDormir);
+    }
+
+	@Override
+	public void emitirSom() {
+		System.out.println("ROOOOAAAAARRRR!");
+	}
+}
+

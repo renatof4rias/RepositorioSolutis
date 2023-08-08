@@ -1,0 +1,9 @@
+package Lista04;
+
+public abstract class AnimalAB implements AnimalIF{
+	public abstract void comer();
+    public abstract void moverse();
+    public abstract void dormir();
+
+}
+	

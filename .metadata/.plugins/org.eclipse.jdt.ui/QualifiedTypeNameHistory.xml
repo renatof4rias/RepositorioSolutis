@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="Lista04.AnimalIF"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="Lista04.AnimalAB"/>
+    <fullyQualifiedTypeName name="Lista04.AnimalMarinhoAB"/>
+    <fullyQualifiedTypeName name="Lista04.AnimalTerrestreAB"/>
+    <fullyQualifiedTypeName name="Lista04.Peixe"/>
+</qualifiedTypeNameHistroy>

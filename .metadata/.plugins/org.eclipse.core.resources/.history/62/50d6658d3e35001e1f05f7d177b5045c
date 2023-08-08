@@ -1,0 +1,8 @@
+package Lista04;
+
+public abstract class AnimalMarinhoAB extends AnimalAB {
+   
+    public void nadar() {
+        System.out.println("Nadando.");
+    }
+}

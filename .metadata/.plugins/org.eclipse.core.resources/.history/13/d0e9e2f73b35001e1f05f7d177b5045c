@@ -1,0 +1,10 @@
+package Lista04;
+
+public class AnimalTerrestreABextends AnimalAB {
+    private int quantidadeCaminhoPercorrido;
+
+    // Métodos específicos para animais terrestres
+    public void andar() {
+        System.out.println("O animal terrestre está andando.");
+
+}
